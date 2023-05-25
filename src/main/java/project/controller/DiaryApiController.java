@@ -47,7 +47,7 @@ public class DiaryApiController {
 		if (list != null && list.size() > 0) {
 			return ResponseEntity.status(HttpStatus.OK).body(list);
 		} else {
-			return ResponseEntity.status(HttpStatus.NOT_FOUND).body(null);
+			return ResponseEntity.status(HttpStatus.OK).body(null);
 		}
 	}
 
